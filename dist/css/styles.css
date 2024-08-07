@@ -11406,15 +11406,16 @@ p {
   }
 }
 header.masthead {
-  padding-top: 10.5rem;
-  padding-bottom: 6rem;
+  padding-top: 0rem;
+  padding-bottom: 10rem;
   text-align: center;
   color: #000000;
-  background-image: url("../assets/img/header-bg.jpg");
+  background-image: url("../assets/img/LOGO.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
-  background-position: bottom 1px right 20px;
-  background-size: cover;
+  background-position: bottom 5px;
+  background-size: 81%;
+  background-position-x: center;
 }
 header.masthead .masthead-subheading {
   font-size: 1.5rem;
