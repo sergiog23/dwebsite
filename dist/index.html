@@ -1,0 +1,1398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guerrero's Electric LLC | Professional Electrical Services in DFW</title>
+    <meta name="description" content="Professional electrical services for residential and commercial properties in the Dallas-Fort Worth area. Licensed, insured, and family-owned with 15+ years of experience.">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16477743214"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'AW-16477743214');
+    </script>
+    
+    <style>
+        :root {
+            --primary: #0047AB;
+            --primary-light: #1E5BC6;
+            --accent: #FFD700;
+            --accent-dark: #FFC107;
+            --dark: #1a1a1a;
+            --light: #f8f9fa;
+            --white: #ffffff;
+            --text: #2c3e50;
+            --text-light: #7f8c8d;
+            --border: #dee2e6;
+            --success: #27ae60;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--text);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Top Contact Bar */
+        .top-bar {
+            background: var(--dark);
+            color: white;
+            padding: 0.8rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.9rem;
+        }
+
+        .top-bar-left {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .top-bar-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .top-bar-item i {
+            color: var(--accent);
+        }
+
+        .top-bar a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .top-bar a:hover {
+            color: var(--accent);
+        }
+
+        /* Navigation */
+        nav {
+            background: white;
+            padding: 1rem 5%;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+        }
+
+        .logo img {
+            height: 50px;
+            width: auto;
+        }
+
+        .logo-text {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.6rem;
+            font-weight: 800;
+            color: var(--primary);
+            letter-spacing: 0.5px;
+        }
+
+        .logo-text span {
+            color: var(--text);
+            font-weight: 600;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2.5rem;
+            align-items: center;
+        }
+
+        .nav-links a {
+            color: var(--text);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: color 0.3s;
+            position: relative;
+        }
+
+        .nav-links a:after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--accent);
+            transition: width 0.3s;
+        }
+
+        .nav-links a:hover:after {
+            width: 100%;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+
+        .cta-nav {
+            background: var(--accent);
+            color: white !important;
+            padding: 0.7rem 1.5rem;
+            border-radius: 5px;
+            font-weight: 600;
+        }
+
+        .cta-nav:hover {
+            background: var(--accent-dark);
+            color: white !important;
+        }
+
+        .cta-nav:after {
+            display: none;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+            color: white;
+            padding: 8rem 5% 6rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><defs><pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="1"/></pattern></defs><rect width="1200" height="600" fill="url(%23grid)"/></svg>');
+            opacity: 0.3;
+        }
+
+        .hero-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .hero-text h1 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 3.5rem;
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: 1.5rem;
+        }
+
+        .hero-text .highlight {
+            color: var(--accent);
+        }
+
+        .hero-text p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 1rem 2rem;
+            font-size: 1rem;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: all 0.3s;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            cursor: pointer;
+            border: none;
+        }
+
+        .btn-primary {
+            background: var(--accent);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: var(--accent-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(243, 156, 18, 0.3);
+        }
+
+        .btn-secondary {
+            background: white;
+            color: var(--primary);
+        }
+
+        .btn-secondary:hover {
+            background: var(--light);
+        }
+
+        .hero-features {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+        }
+
+        .hero-feature {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            padding: 1.5rem;
+            border-radius: 10px;
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+
+        .hero-feature i {
+            font-size: 2rem;
+            color: var(--accent);
+            margin-bottom: 0.5rem;
+        }
+
+        .hero-feature h3 {
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .hero-feature p {
+            font-size: 0.9rem;
+            margin: 0;
+            opacity: 0.8;
+        }
+
+        /* Services Section */
+        .services {
+            padding: 6rem 5%;
+            background: white;
+        }
+
+        .section-header {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 4rem;
+        }
+
+        .section-label {
+            color: var(--accent);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .section-title {
+            font-family: 'Poppins', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+
+        .section-subtitle {
+            color: var(--text-light);
+            font-size: 1.1rem;
+        }
+
+        .services-grid {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+        }
+
+        .service-card {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            transition: all 0.3s;
+            border: 2px solid transparent;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+            border-color: var(--accent);
+        }
+
+        .service-icon {
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(135deg, var(--accent), var(--accent-dark));
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .service-icon i {
+            font-size: 2rem;
+            color: white;
+        }
+
+        .service-card h3 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--primary);
+        }
+
+        .service-card p {
+            color: var(--text-light);
+            line-height: 1.7;
+            margin-bottom: 1.5rem;
+        }
+
+        .service-list {
+            list-style: none;
+        }
+
+        .service-list li {
+            padding: 0.5rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+            color: var(--text);
+            font-size: 0.95rem;
+        }
+
+        .service-list li:before {
+            content: "⚡";
+            position: absolute;
+            left: 0;
+            color: var(--accent);
+        }
+
+        /* Portfolio Section */
+        .portfolio {
+            padding: 6rem 5%;
+            background: var(--light);
+        }
+
+        .portfolio-tabs {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 3rem;
+        }
+
+        .tab-btn {
+            padding: 0.8rem 2rem;
+            background: white;
+            border: 2px solid var(--border);
+            color: var(--text);
+            font-weight: 600;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .tab-btn.active {
+            background: var(--primary);
+            color: white;
+            border-color: var(--primary);
+        }
+
+        .tab-btn:hover {
+            border-color: var(--primary);
+        }
+
+        .portfolio-grid {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+
+        .portfolio-item {
+            position: relative;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            cursor: pointer;
+            height: 300px;
+        }
+
+        .portfolio-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s;
+        }
+
+        .portfolio-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .portfolio-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(to top, rgba(10, 61, 98, 0.95), transparent);
+            padding: 2rem;
+            color: white;
+            transform: translateY(100%);
+            transition: transform 0.3s;
+        }
+
+        .portfolio-item:hover .portfolio-overlay {
+            transform: translateY(0);
+        }
+
+        .portfolio-overlay h3 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .portfolio-overlay p {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+
+        /* About Section */
+        .about {
+            padding: 6rem 5%;
+            background: white;
+        }
+
+        .about-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .about-content h2 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 1.5rem;
+        }
+
+        .about-content p {
+            color: var(--text-light);
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+        }
+
+        .about-features {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .about-feature {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+        }
+
+        .about-feature i {
+            font-size: 1.5rem;
+            color: var(--accent);
+            margin-top: 0.2rem;
+        }
+
+        .about-feature div h4 {
+            font-weight: 600;
+            margin-bottom: 0.3rem;
+            color: var(--primary);
+        }
+
+        .about-feature div p {
+            font-size: 0.9rem;
+            margin: 0;
+        }
+
+        .about-stats {
+            background: var(--primary);
+            padding: 3rem;
+            border-radius: 15px;
+            color: white;
+        }
+
+        .stats-grid {
+            display: grid;
+            gap: 2rem;
+        }
+
+        .stat-item {
+            text-align: center;
+            padding: 1.5rem;
+            background: rgba(255,255,255,0.1);
+            border-radius: 10px;
+        }
+
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 800;
+            color: var(--accent);
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .stat-label {
+            font-size: 1rem;
+            opacity: 0.9;
+        }
+
+        /* Reviews Section */
+        .reviews {
+            padding: 6rem 5%;
+            background: var(--light);
+        }
+
+        .reviews-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+
+        .review-card {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            position: relative;
+        }
+
+        .review-stars {
+            color: var(--accent);
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+
+        .review-text {
+            color: var(--text);
+            line-height: 1.7;
+            margin-bottom: 1.5rem;
+            font-style: italic;
+        }
+
+        .review-author {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .review-avatar {
+            width: 50px;
+            height: 50px;
+            background: var(--primary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 700;
+            font-size: 1.2rem;
+        }
+
+        .review-info h4 {
+            font-weight: 600;
+            color: var(--primary);
+        }
+
+        .review-info p {
+            font-size: 0.9rem;
+            color: var(--text-light);
+            margin: 0;
+        }
+
+        /* Contact Section */
+        .contact {
+            padding: 6rem 5%;
+            background: white;
+        }
+
+        .contact-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+        }
+
+        .contact-info h2 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-info p {
+            color: var(--text-light);
+            line-height: 1.8;
+            margin-bottom: 2rem;
+        }
+
+        .contact-details {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            padding: 1.5rem;
+            background: var(--light);
+            border-radius: 10px;
+        }
+
+        .contact-item i {
+            font-size: 1.5rem;
+            color: var(--accent);
+            margin-top: 0.2rem;
+        }
+
+        .contact-item div h4 {
+            font-weight: 600;
+            margin-bottom: 0.3rem;
+            color: var(--primary);
+        }
+
+        .contact-item div p {
+            margin: 0;
+            color: var(--text-light);
+        }
+
+        .contact-form {
+            background: var(--light);
+            padding: 2.5rem;
+            border-radius: 15px;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: var(--text);
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 1rem;
+            border: 2px solid var(--border);
+            border-radius: 8px;
+            font-family: 'Inter', sans-serif;
+            font-size: 1rem;
+            transition: border-color 0.3s;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--primary);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 150px;
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 1rem;
+            background: var(--primary);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .submit-btn:hover {
+            background: var(--primary-light);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(10, 61, 98, 0.3);
+        }
+
+        /* Footer */
+        footer {
+            background: var(--dark);
+            color: white;
+            padding: 3rem 5% 1.5rem;
+        }
+
+        .footer-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 3rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-about h3 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .footer-about span {
+            color: var(--accent);
+        }
+
+        .footer-about p {
+            color: rgba(255,255,255,0.7);
+            line-height: 1.7;
+        }
+
+        .footer-section h4 {
+            font-family: 'Poppins', sans-serif;
+            margin-bottom: 1rem;
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section a {
+            color: rgba(255,255,255,0.7);
+            text-decoration: none;
+            display: block;
+            padding: 0.4rem 0;
+            transition: color 0.3s;
+        }
+
+        .footer-section a:hover {
+            color: var(--accent);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            color: rgba(255,255,255,0.5);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .top-bar {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+
+            .top-bar-left {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .hero-content {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-text h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero-features {
+                grid-template-columns: 1fr;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .services-grid,
+            .portfolio-grid,
+            .reviews-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .about-container,
+            .contact-container {
+                grid-template-columns: 1fr;
+            }
+
+            .about-features {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Success Message */
+        .success-message {
+            display: none;
+            background: var(--success);
+            color: white;
+            padding: 1rem;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        .success-message.show {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <!-- Top Contact Bar -->
+    <div class="top-bar">
+        <div class="top-bar-left">
+            <div class="top-bar-item">
+                <i class="fas fa-phone"></i>
+                <a href="tel:214-281-2626">214-281-2626</a>
+            </div>
+            <div class="top-bar-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Serving Dallas-Fort Worth Area</span>
+            </div>
+        </div>
+        <div class="top-bar-item">
+            <i class="fas fa-clock"></i>
+            <span>Mon-Sat: 7am - 6pm</span>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+                <img src="logo-symbol.png" alt="Guerrero's Electric">
+                <div class="logo-text">GUERRERO'S <span>ELECTRIC</span></div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Projects</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#contact" class="cta-nav">Get Free Estimate</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Professional <span class="highlight">Electrical Services</span> in DFW</h1>
+                <p>Licensed, insured, and family-owned with over 15 years of experience delivering exceptional electrical solutions for residential and commercial properties.</p>
+                <div class="hero-buttons">
+                    <a href="tel:214-281-2626" class="btn btn-primary">
+                        <i class="fas fa-phone"></i> Call Now
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">Free Estimate</a>
+                </div>
+            </div>
+            <div class="hero-features">
+                <div class="hero-feature">
+                    <i class="fas fa-certificate"></i>
+                    <h3>Licensed & Insured</h3>
+                    <p>Fully certified professionals you can trust</p>
+                </div>
+                <div class="hero-feature">
+                    <i class="fas fa-clock"></i>
+                    <h3>15+ Years</h3>
+                    <p>Extensive experience in the DFW area</p>
+                </div>
+                <div class="hero-feature">
+                    <i class="fas fa-users"></i>
+                    <h3>Family Owned</h3>
+                    <p>Personalized service and care</p>
+                </div>
+                <div class="hero-feature">
+                    <i class="fas fa-dollar-sign"></i>
+                    <h3>Free Estimates</h3>
+                    <p>No obligation quotes for all projects</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="section-header">
+            <div class="section-label">What We Do</div>
+            <h2 class="section-title">Our Electrical Services</h2>
+            <p class="section-subtitle">Comprehensive electrical solutions for residential and commercial properties</p>
+        </div>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-plug"></i>
+                </div>
+                <h3>Repair & Replacement</h3>
+                <p>Expert repairs and upgrades to keep your electrical systems running safely and efficiently.</p>
+                <ul class="service-list">
+                    <li>Panel upgrades and replacements</li>
+                    <li>Rewiring services</li>
+                    <li>Circuit breaker repairs</li>
+                    <li>Extension installations</li>
+                </ul>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-bolt"></i>
+                </div>
+                <h3>Troubleshooting</h3>
+                <p>Reliable electrical troubleshooting to identify and resolve issues quickly and effectively.</p>
+                <ul class="service-list">
+                    <li>Diagnostic services</li>
+                    <li>Power outage resolution</li>
+                    <li>Circuit testing</li>
+                    <li>Safety inspections</li>
+                </ul>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-lightbulb"></i>
+                </div>
+                <h3>Installation Services</h3>
+                <p>Professional installation of all electrical fixtures, systems, and equipment.</p>
+                <ul class="service-list">
+                    <li>Light fixtures & ceiling fans</li>
+                    <li>Electrical panels</li>
+                    <li>Generators (Generac certified)</li>
+                    <li>EV chargers</li>
+                    <li>Landscape lighting</li>
+                    <li>Wiring installations</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio" id="portfolio">
+        <div class="section-header">
+            <div class="section-label">Our Work</div>
+            <h2 class="section-title">Recent Projects</h2>
+            <p class="section-subtitle">Quality workmanship you can see</p>
+        </div>
+        
+        <div class="portfolio-tabs">
+            <button class="tab-btn active" data-tab="residential">Residential</button>
+            <button class="tab-btn" data-tab="commercial">Commercial</button>
+        </div>
+
+        <div class="portfolio-grid" id="residential-projects">
+            <div class="portfolio-item">
+                <img src="assets/img/3.jpeg" alt="Panel Upgrade">
+                <div class="portfolio-overlay">
+                    <h3>Panel Upgrade</h3>
+                    <p>Modern electrical panel installation</p>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <img src="assets/img/IMG_3491.jpg" alt="Generac Generator">
+                <div class="portfolio-overlay">
+                    <h3>Generac Generator</h3>
+                    <p>Whole home backup power solution</p>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <img src="assets/img/IMG_2314.JPG" alt="Recessed Lighting">
+                <div class="portfolio-overlay">
+                    <h3>Recessed Lighting</h3>
+                    <p>Professional lighting installation</p>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <img src="assets/img/1.jpeg" alt="Service Upgrade">
+                <div class="portfolio-overlay">
+                    <h3>Service Upgrade</h3>
+                    <p>Complete electrical service modernization</p>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <img src="assets/img/4.jpeg" alt="Wiring">
+                <div class="portfolio-overlay">
+                    <h3>Wiring Installation</h3>
+                    <p>Professional wiring for new construction</p>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <img src="assets/img/ledlight1.jpg" alt="LED Lighting">
+                <div class="portfolio-overlay">
+                    <h3>LED Lighting</h3>
+                    <p>Energy-efficient lighting solutions</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="portfolio-grid" id="commercial-projects" style="display: none;">
+            <div class="portfolio-item">
+                <img src="assets/img/com1.JPG" alt="Commercial Project 1">
+                <div class="portfolio-overlay">
+                    <h3>Commercial Installation</h3>
+                    <p>Full electrical system for business</p>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <img src="assets/img/com2.JPG" alt="Commercial Project 2">
+                <div class="portfolio-overlay">
+                    <h3>Office Electrical</h3>
+                    <p>Professional office electrical work</p>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <img src="assets/img/com3.JPG" alt="Commercial Project 3">
+                <div class="portfolio-overlay">
+                    <h3>Commercial Upgrade</h3>
+                    <p>System upgrade for retail space</p>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <img src="assets/img/com4.JPG" alt="Commercial Project 4">
+                <div class="portfolio-overlay">
+                    <h3>Industrial Wiring</h3>
+                    <p>Heavy-duty electrical installation</p>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <img src="assets/img/com6.JPG" alt="Commercial Project 5">
+                <div class="portfolio-overlay">
+                    <h3>Commercial Lighting</h3>
+                    <p>Professional commercial lighting</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="about-container">
+            <div class="about-content">
+                <div class="section-label">About Us</div>
+                <h2>Family-Owned & Trusted in DFW</h2>
+                <p>Guerrero's Electric has been proudly serving the Dallas-Fort Worth area for over 15 years. As a family-owned and operated business, we understand the importance of quality workmanship and exceptional customer service.</p>
+                <p>Our team is fully licensed, insured, and committed to providing the highest level of electrical services for both residential and commercial properties. We take pride in our work and treat every project with the same care and attention we would give our own homes.</p>
+                
+                <div class="about-features">
+                    <div class="about-feature">
+                        <i class="fas fa-shield-alt"></i>
+                        <div>
+                            <h4>Licensed & Insured</h4>
+                            <p>Fully certified and protected</p>
+                        </div>
+                    </div>
+                    <div class="about-feature">
+                        <i class="fas fa-award"></i>
+                        <div>
+                            <h4>Quality Guarantee</h4>
+                            <p>Satisfaction guaranteed on all work</p>
+                        </div>
+                    </div>
+                    <div class="about-feature">
+                        <i class="fas fa-handshake"></i>
+                        <div>
+                            <h4>Fair Pricing</h4>
+                            <p>Honest, transparent estimates</p>
+                        </div>
+                    </div>
+                    <div class="about-feature">
+                        <i class="fas fa-headset"></i>
+                        <div>
+                            <h4>24/7 Support</h4>
+                            <p>Emergency services available</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="about-stats">
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-number">15+</div>
+                        <div class="stat-label">Years of Experience</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">500+</div>
+                        <div class="stat-label">Projects Completed</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">100%</div>
+                        <div class="stat-label">Customer Satisfaction</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="reviews" id="reviews">
+        <div class="section-header">
+            <div class="section-label">Testimonials</div>
+            <h2 class="section-title">What Our Clients Say</h2>
+            <p class="section-subtitle">Real reviews from real customers</p>
+        </div>
+        <div class="reviews-grid">
+            <div class="review-card">
+                <div class="review-stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p class="review-text">"Guerrero's Electric fixed my portable generator which didn't start. He ordered the parts and installed them at a reasonable price. Now I'm back in business for mother nature's power outages. I highly recommend him."</p>
+                <div class="review-author">
+                    <div class="review-avatar">KT</div>
+                    <div class="review-info">
+                        <h4>Kerry T.</h4>
+                        <p>Ovilla, TX</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="review-card">
+                <div class="review-stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p class="review-text">"They were really good. I have known him for a while. He was by far the highest quality contractor and I recommend him to everyone. He is honest and straight forward about pricing. An absolute pleasure to work with!"</p>
+                <div class="review-author">
+                    <div class="review-avatar">CD</div>
+                    <div class="review-info">
+                        <h4>Chad D.</h4>
+                        <p>Dallas, TX</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="review-card">
+                <div class="review-stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p class="review-text">"Professional, reliable, and affordable! Guerrero's Electric completed our panel upgrade quickly and efficiently. Their attention to detail and commitment to safety was impressive. Highly recommend for any electrical work!"</p>
+                <div class="review-author">
+                    <div class="review-avatar">MR</div>
+                    <div class="review-info">
+                        <h4>Maria R.</h4>
+                        <p>Fort Worth, TX</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="section-label">Get In Touch</div>
+                <h2>Request Your Free Estimate</h2>
+                <p>Ready to get started on your electrical project? Fill out the form and we'll contact you as soon as possible to provide a free, no-obligation estimate.</p>
+                
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p><a href="tel:214-281-2626" style="color: var(--text-light); text-decoration: none;">214-281-2626</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Service Area</h4>
+                            <p>Dallas-Fort Worth & Surrounding Areas</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Business Hours</h4>
+                            <p>Monday - Saturday: 7am - 6pm</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="contact-form">
+                <div class="success-message" id="successMessage">
+                    Thank you! We'll contact you within 24 hours.
+                </div>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone *</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Project Details *</label>
+                        <textarea id="message" name="message" required placeholder="Tell us about your electrical project..."></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">
+                        <i class="fas fa-paper-plane"></i> Request Free Estimate
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-about">
+                <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 1rem;">
+                    <img src="logo-symbol.png" alt="Guerrero's Electric" style="height: 45px; width: auto;">
+                    <h3 style="margin: 0; font-size: 1.4rem;">GUERRERO'S <span>ELECTRIC</span></h3>
+                </div>
+                <p>Your trusted electrical partner in the Dallas-Fort Worth area. Family-owned, licensed, and insured with over 15 years of experience delivering exceptional electrical services.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#reviews">Reviews</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="#services">Repairs & Replacements</a></li>
+                    <li><a href="#services">Troubleshooting</a></li>
+                    <li><a href="#services">Installations</a></li>
+                    <li><a href="#services">Panel Upgrades</a></li>
+                    <li><a href="#services">Generators</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <ul>
+                    <li><a href="tel:214-281-2626">214-281-2626</a></li>
+                    <li>Serving DFW Area</li>
+                    <li>Mon-Sat: 7am-6pm</li>
+                    <li><a href="#contact">Free Estimates</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Guerrero's Electric LLC. All Rights Reserved. | Licensed & Insured</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Portfolio tabs
+        const tabBtns = document.querySelectorAll('.tab-btn');
+        const residentialProjects = document.getElementById('residential-projects');
+        const commercialProjects = document.getElementById('commercial-projects');
+
+        tabBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                tabBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                
+                if (btn.dataset.tab === 'residential') {
+                    residentialProjects.style.display = 'grid';
+                    commercialProjects.style.display = 'none';
+                } else {
+                    residentialProjects.style.display = 'none';
+                    commercialProjects.style.display = 'grid';
+                }
+            });
+        });
+
+        // Form submission
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const successMessage = document.getElementById('successMessage');
+            successMessage.classList.add('show');
+            this.reset();
+            setTimeout(() => {
+                successMessage.classList.remove('show');
+            }, 5000);
+        });
+    </script>
+</body>
+</html>
